@@ -26,7 +26,6 @@ namespace CustomPlugin
         {
             Instance = this;
             Exiled.Events.Handlers.Player.UsingRadioBattery += OnRadioUsingEv;
-
             Log.Debug("InfiniteRadioBattery has been enabled.");
             base.OnEnabled();
         }
@@ -35,7 +34,6 @@ namespace CustomPlugin
         {
             Instance = null;
             Exiled.Events.Handlers.Player.UsingRadioBattery -= OnRadioUsingEv;
-
             Log.Debug("InfiniteRadioBattery has been disabled.");
             base.OnDisabled();
         }
